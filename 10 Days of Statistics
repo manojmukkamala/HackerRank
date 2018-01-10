@@ -11,3 +11,15 @@ if __name__ == '__main__':
     print (np.median(arr))
     print(int(stats.mode(arr)[0]))
     
+Day 0: Weighted Mean
+if __name__ == '__main__':
+    n = int(input())
+    arr1 = list(map(int, input().split()))
+    arr2 = list(map(int, input().split()))
+
+    m = 0
+    for i in range(n):
+        m = m + arr1[i]*arr2[i]
+        
+    print (round(m/sum(arr2),1))
+    
