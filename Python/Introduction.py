@@ -17,7 +17,6 @@ else: print("Not Weird")
 if __name__ == '__main__':
     a = int(input())
     b = int(input())
-
 print("{0} \n{1} \n{2}". format((a + b), max(a - b, b - a), (a * b)))
 
 
@@ -25,26 +24,21 @@ print("{0} \n{1} \n{2}". format((a + b), max(a - b, b - a), (a * b)))
 if __name__ == '__main__':
     a = int(input())
     b = int(input())
-
 print("{0} \n{1}". format(a//b, a/b))
 
 
 # Loops
 if __name__ == '__main__':
     n = int(input())
-
 [print(i**2) for i in range(n)]
 
 
 # Write a function
 def is_leap(year):
-    leap = False
-    
+    leap = False   
     # Write your logic here
-    if(year%4 == 0 and (year%100 != 0 or year%400 == 0)): leap = True
-    
+    if(year%4 == 0 and (year%100 != 0 or year%400 == 0)): leap = True   
     return leap
-
 year = int(input())
 print(is_leap(year))
 
@@ -52,5 +46,4 @@ print(is_leap(year))
 # Print Function
 if __name__ == '__main__':
     n = int(input())
-
 print(*range(1, n+1), sep = "")
