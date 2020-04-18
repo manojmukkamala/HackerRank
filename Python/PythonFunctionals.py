@@ -4,6 +4,11 @@ cube = lambda x: x ** 3 # complete the lambda function
 
 def fibonacci(n):
     # return a list of fibonacci numbers
+    
+    #f = [0, 1]
+    #[f.append(sum(f[-2:])) for i in range(n-2)]
+    #return [] if n == 0 else [0] if n == 1 else f 
+    
     a = [0, 1]
     for i in range(2, n):
         a.append(a[i-2] + a[i-1])
