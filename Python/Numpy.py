@@ -3,6 +3,7 @@ import numpy
 def arrays(arr):
     # complete this function
     # use numpy.array
+    #return numpy.array(arr[::-1], dtype = float) #Another Solution
     return numpy.flip(numpy.array(arr, float), 0)
 arr = input().strip().split(' ')
 result = arrays(arr)
@@ -25,6 +26,7 @@ print(arr.flatten())
 
 # Concatenate
 import numpy as np
+# print(np.array([input().split(' ') for _ in range( np.array(input().split(' '), int)[:-1].sum() )], int)) #Another Solution
 n, m, p = map(int, input().split())
 a = np.array([input().split() for _ in range(n)], dtype = int)
 b = np.array([input().split() for _ in range(m)], dtype = int)
@@ -62,6 +64,7 @@ print(np.floor(A), np.ceil(A), np.rint(A), sep = '\n')
 
 # Sum and Prod
 import numpy as np
+# print( np.product( np.sum( [ np.array(input().split(), int) for _ in range(int(input().split(' ')[0])) ], axis = 0 ) ) ) #Another Solution
 N, M = map(int, input().split())
 A = np.array([input().split() for _ in range(N)], dtype = int)
 print(np.product(np.sum(A, axis = 0)))
