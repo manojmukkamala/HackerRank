@@ -12,7 +12,7 @@ def score_words(words):
         if num_vowels % 2 == 0:
             score += 2
         else:
-            score += 1
+            score += 1  #Modified this line
     return score
 
 n = int(input())
@@ -40,6 +40,7 @@ class OddStream(object):
         return to_return
 
 def print_from_stream(n, stream=EvenStream()):
+    stream.__init__()  #Added this Line
     for _ in range(n):
         print(stream.get_next())
 
